@@ -239,7 +239,7 @@ router.put(
     check("degree", "degree is required")
       .not()
       .isEmpty(),
-    check("field of study", "field of study is required")
+    check("fieldofstudy", "field of study is required")
       .not()
       .isEmpty(),
     check("from", "from date is required")
@@ -263,7 +263,7 @@ router.put(
     } = req.body;
 
     const newEdu = {
-      title,
+      school,
       degree,
       fieldofstudy,
       from,
@@ -296,6 +296,7 @@ router.delete("/education/:edu_id", auth, async (req, res) => {
     res.json(profile);
   } catch (err) {
     console.log(err.message);
+
     res.status(500).send("server Error");
   }
 });

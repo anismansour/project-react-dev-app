@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://anis123:anis123@cluster0-jzvkj.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "secretjwt"
+  "jwtSecret": "secretjwt",
+  "githubClientId": "82677c6b31fe2093602e",
+  "githubSecret": "e60078455d7153f297b72df8a75f20c1cb3ea343"
 }
