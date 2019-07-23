@@ -51,7 +51,7 @@ router.post(
           .json({ errors: [{ msg: "invalid credentials " }] });
       }
 
-      //jwt
+      //jwt  token  like session with time   change 3600000 to 3600 one hour
       const payload = {
         user: {
           id: user.id
